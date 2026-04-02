@@ -1,0 +1,167 @@
+/* ===== ACSL Page Styles ===== */
+.acsl-page {
+    min-height: 100vh;
+    padding: 100px 20px 40px;
+    background: var(--bg-primary);
+}
+
+.acsl-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-primary);
+    text-decoration: none;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    gap: 12px;
+}
+
+.achievement-banner {
+    background: linear-gradient(135deg, rgba(125, 143, 90, 0.15), rgba(90, 125, 107, 0.1));
+    border: 1px solid var(--accent-primary);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.achievement-banner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.achievement-banner p {
+    color: var(--text-secondary);
+}
+
+.acsl-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.acsl-item {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.acsl-item:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 24px rgba(125, 143, 90, 0.15);
+}
+
+.acsl-year {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--accent-teal-dark);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.acsl-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.acsl-item .problem-list {
+    list-style: none;
+    margin-top: 12px;
+}
+
+.acsl-item .problem-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.acsl-item .problem-list li:last-child {
+    border-bottom: none;
+}
+
+.acsl-item .problem-list a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+}
+
+.acsl-item .problem-list a:hover {
+    text-decoration: underline;
+}
+
+.perfect-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(125, 143, 90, 0.15);
+    border: 1px solid var(--accent-success);
+    border-radius: 6px;
+    color: var(--accent-success);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.stats-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.stat-box {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.stat-box .number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+}
+
+.stat-box .label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
